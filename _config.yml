@@ -1,23 +1,29 @@
 # Your presentation title
-title: Jekyll and Reveal.js
+title: It Takes a Village to Develop a Coder… Lessons from the Curve
+
+
+remote_theme: autotraderuk/jekyll-revealjs@v2.2.2
+plugins:
+  - jekyll-remote-theme
 
 # Your presentation description (optional)
-description: A framework for easily creating beautiful presentations using HTML
+description: A talk about what I learned supporting people who were learning to code at Autotrader
 
 # Your name (optional)
-author: jekyll-revealjs contributors
+author: Mark Crossfield
 
 # The Reveal theme
-reveal_theme: black.css
+reveal_theme: at.css
 
 # The Reveal transition
 reveal_transition: default
 
 # Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: reveal.js/css/theme/ 
+reveal_theme_path: assets/css/
 
 # Additional custom CSS paths
-extra_css: 
+extra_css:
+  - extra.css
 
 # Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
 highlight_style_sheet: 
@@ -26,7 +32,9 @@ highlight_style_sheet:
 reveal_notes_server: false
 
 # Additional reveal.js options
-reveal_options: 
+reveal_options:
+  slideNumber: 'c/t'
+  fragmentInURL: true
 
 # Additional reveal.js dependencies
 reveal_dependencies:
